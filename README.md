@@ -1,5 +1,7 @@
 ## consul-rpm
 
+yum install -y rpm-build ruby rubygems ruby-devel
+
 ### 安装 fpm
 
 ``` sh

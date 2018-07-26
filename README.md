@@ -21,5 +21,5 @@ gem install fpm
 ### build rpm
 
 ``` sh
-./build.sh 0.9.3
+./build.sh 1.2.1
 ```

@@ -7,6 +7,9 @@ if [ ! -d /data/consul ]; then
 fi
 
 
+##wget http://rpms.adiscon.com/v8-stable/rsyslog.repo -P /etc/yum.repos.d/ 
+##yum -y install rsyslog 
+
 mkdir /etc/rsyslog.d
 cat >/etc/rsyslog.d/consul.conf <<EOF
 local0.* /data/consul/log/consul.log

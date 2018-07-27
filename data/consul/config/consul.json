@@ -1,0 +1,19 @@
+{
+    "datacenter": "consul-cluster",
+    "data_dir": "/data/consul/data",
+    "log_level": "INFO",
+    "node_name": "consul01",
+    "server": true,
+    "ui": true,
+    "bootstrap_expect": 1,
+    "bind_addr": "192.168.1.11",
+    "client_addr": "192.168.1.11",
+    "retry_join": ["192.168.1.12","192.168.1.13"],
+    "retry_interval": "3s",
+    "protocol": 3,
+    "raft_protocol": 3,
+    "enable_debug": false,
+    "rejoin_after_leave": true,
+    "enable_syslog": true
+}
+

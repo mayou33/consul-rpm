@@ -2,15 +2,17 @@ getent group consul >/dev/null || groupadd -r consul
 getent passwd consul >/dev/null || useradd -r -g consul -d /var/lib/consul -s /sbin/nologin -c "consul user" consul
 if [ ! -d /data/consul ]; then 
      mkdir -p /data/consul/{config,data,log}
-     chown -R consul:consul   /data/consul
-     chmod -R 0755 /data/consul
 fi
 
 
 ##wget http://rpms.adiscon.com/v8-stable/rsyslog.repo -P /etc/yum.repos.d/ 
 ##yum -y install rsyslog 
 
-mkdir /etc/rsyslog.d
+if [ ! -d /etc/rsyslog.d ]; then 
+   mkdir /etc/rsyslog.d
+fi
+
+
 cat >/etc/rsyslog.d/consul.conf <<EOF
 local0.* /data/consul/log/consul.log
 EOF
@@ -31,5 +33,7 @@ create 0600 root root
 }
 EOF
 
+chown -R consul:consul /data/consul/
+chmod -R 0755 /data/consul/
 systemctl restart rsyslog
 

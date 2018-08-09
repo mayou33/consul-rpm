@@ -29,3 +29,11 @@ cd consul-rpm
 ``` sh
 ./build.sh 1.2.2
 ```
+
+####安装 cousul
+
+ rpm -ivh consul-1.2.2-1.x86_64.rpm 
+ 
+ ###查看一下
+
+rpm -ql consul

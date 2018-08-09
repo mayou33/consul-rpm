@@ -4,7 +4,7 @@ CONSUL_VERSION=$1
 
 if [ "" == "${CONSUL_VERSION}" ];then
     echo -e "\033[31mError: CONSUL_VERSION is blank!\033[0m"
-    echo -e "\033[33mUse: \"$0 1.2.1\" to build consul rpm.\033[0m"
+    echo -e "\033[33mUse: \"$0 1.2.2\" to build consul rpm.\033[0m"
     exit 1
 fi
 

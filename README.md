@@ -1,6 +1,9 @@
  
 ##wget http://rpms.adiscon.com/v8-stable/rsyslog.repo -P /etc/yum.repos.d/ 
-	##yum -y install rsyslog 
+
+
+
+#yum -y install rsyslog 
 
 
 ### 安装 ruby
@@ -20,5 +23,5 @@ cd consul-rpm
 ### build rpm
 
 ``` sh
-./build.sh 1.2.1
+./build.sh 1.2.2
 ```

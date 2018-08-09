@@ -12,10 +12,14 @@ yum install -y rpm-build ruby rubygems ruby-devel
 
 
 ### 安装 fpm
+
 gem install fpm
  
 
 ##下载
+
+
+
 git clone https://github.com/mayou33/consul-rpm.git
 
 cd consul-rpm

@@ -51,3 +51,4 @@ systemctl enable consul
 
 systemctl status consul
 
+此时可访问任意一台 Server 节点的 UI 界面，http://localhost:8500

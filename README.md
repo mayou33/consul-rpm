@@ -37,3 +37,17 @@ cd consul-rpm
  ###查看一下
 
 rpm -ql consul
+
+修改 /data/consul/config/consul.json
+
+修改/usr/lib/systemd/system/consul.service
+
+
+systemctl daemon-reload
+
+systemctl start consul
+
+systemctl enable consul
+
+systemctl status consul
+
